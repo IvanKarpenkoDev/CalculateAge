@@ -1,0 +1,173 @@
+@font-face {
+  font-family: "Poppins-Bold";
+  src: url("../fonts/Poppins-Bold.ttf");
+}
+@font-face {
+  font-family: "Poppins-Italic";
+  src: url("../fonts/Poppins-Italic.ttf");
+}
+
+@font-face {
+  font-family: "Poppins-Regular";
+  src: url("../fonts/Poppins-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Poppins-ExtraBoldItalic";
+  src: url("../fonts/Poppins-ExtraBoldItalic.ttf");
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    margin: 0 auto;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(226, 226, 226);
+    height: 100vh;
+    max-width: 1200px;
+    width: 100%;
+    display: flex;
+}
+
+.input__div {
+  display: flex;
+  gap: 25px;
+  margin-right: 120px;
+  margin-top: 20px;
+  text-align: center; /* Выравниваем по центру */
+}
+
+
+
+.form__calculate {
+  background-color: #fff;
+  border: none;
+  border-radius: 20px 20px 140px 20px;
+  padding: 30px 60px;
+}
+
+.input-box {
+    position: relative;
+}
+  
+input {
+  font-size: 20px;
+  font-family: "Poppins-Bold";
+    background: #fff;
+    padding: 15px;
+    /* закруглим края у поля ввода */
+    border-radius: 3px;
+    width: 90px;
+    border: 0.2px solid rgb(172, 172, 172);
+}
+  
+label {
+    position: absolute;
+    font-size: 11px;
+    /* смещение относительно родительского элемента 10px вверх от верхнего края и   10px влево */
+    top: -10px;
+    left: 10px;
+    font-family: "Poppins-Bold";
+    letter-spacing: 2px;
+    background: #fff;
+    color: rgb(85, 85, 85);
+    padding: 0 5px;
+}
+
+.years__div{
+    display: flex;
+    padding: 0;
+    margin: 0;
+    align-items: center; 
+}
+h1{
+    font-family: 'Poppins-ExtraBoldItalic';
+    font-weight: bold;
+    font-size: 80px;
+    color: rgb(153, 63, 255) ;
+    padding: 0;
+    margin: 0;
+    margin-bottom: -20px;
+}
+
+p{
+  font-family: 'Poppins-ExtraBoldItalic';
+  font-weight: bold;
+  font-size: 80px;
+  margin: 0;
+  margin-bottom: -20px;
+}
+
+.months__div{
+    display: flex;
+    padding: 0;
+    margin: 0;
+    align-items: center; 
+}
+
+.days__div{
+  padding: 0;
+    display: flex;
+    margin: 0;
+    align-items: center; 
+}
+
+.result__number{
+  height: fit-content;
+  display: block;
+  justify-content: center;
+}
+
+.container{
+  margin: 0 auto;
+  width: 100%;
+  height: 75px;
+}
+
+button {
+  margin-right: 40px;
+  margin-left: 40px;
+  
+  width: 75px; /* Задаем желаемый размер кнопки */
+  height: 75px;
+  position: absolute;
+  
+  right: 0;
+  border-radius: 50%; /* Делаем кнопку круглой */
+  background-color: rgb(153, 63, 255); /* Задаем цвет фона */
+  display: flex;
+  border: none;
+  justify-content: center;
+  align-items: center;
+  transition: 0.2s; 
+  cursor: pointer;/* Центрируем содержимое по вертикали */
+}
+
+button:hover{
+  background-color: rgba(153, 63, 255, 0.788); 
+}
+
+button:active{
+  background-color: rgb(133, 54, 224);
+}
+
+
+
+@media screen and (max-width: 768px) {
+  button {
+      width: 50px; /* Уменьшаем размер кнопки на мобильных устройствах */
+      height: 50px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  input {
+      font-size: 16px; /* Уменьшаем шрифт на мобильных устройствах */
+  }
+
+  label {
+      font-size: 9px; /* Уменьшаем шрифт на мобильных устройствах */
+  }
+}
